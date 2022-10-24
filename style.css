@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+:root {
+    --blue: #000ff0;
+    --green: #008000;
+    --dark: #1b1b1b;
+    --white: #fff;
+}
+
+*,
+ ::after,
+ ::before {
+    color: #fff;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(var(--blue), var(--dark))
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 42vw;
+    height: 52vh;
+    gap: 100px;
+}
+
+.test {
+    width: 18vw;
+    height: 20vh;
+    background: radial-gradient(var(--blue), var(--white));
+    border-radius: 10%;
+    transition: background 12s;
+}
+
+.test:hover {
+    cursor: pointer;
+    background: radial-gradient(var(--white), var(--blue));
+    -webkit-box-shadow: -14px 9px 13px -1px rgba(1, 1, 4, 1);
+    -moz-box-shadow: -14px 9px 13px -1px rgba(1, 1, 4, 1);
+    box-shadow: -14px 9px 13px -1px rgba(1, 1, 4, 1);
+}
+
+.test.one {
+    animation: rotateOne 1s;
+}
+
+.test.two {
+    animation: rotateTwo 1s;
+}
+
+.test.three {
+    animation: rotateThree 1s;
+}
+
+.test.four {
+    animation: rotateFour 1s;
+}
+
+.mainString {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    width: 100%;
+    height: 100%;
+}
+
+.mainString:hover {
+    color: #000;
+}
+
+
+/*Napisy Main*/
+
+.mainString.one {
+    animation: rotateOneString 1s;
+}
+
+.mainString.two {
+    animation: rotateTwoString 1s;
+}
+
+.mainString.three {
+    animation: rotateThreeString 1s;
+}
+
+.mainString.four {
+    animation: rotateFourString 1s;
+}
+
+
+/*Zegar*/
+
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1vw;
+    top: 2vh;
+    width: 20vw;
+    height: 15vh;
+}
+
+#timer {
+    font-size: 450%;
+    animation: rotateTime 2s;
+}
+
+
+/*Treść Głóna*/
+
+.content {
+    display: none;
+    border-radius: 15%;
+    width: 45vw;
+    height: 55vh;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    animation: mainSlide 2s;
+}
+
+
+/*Stopka*/
+
+.footerM {
+    font-size: 100%;
+    animation: Copyright 3.5s;
+}
+
+footer {
+    position: absolute;
+    left: 40vw;
+    bottom: 2vh;
+    font-size: 300%;
+    width: 60vw;
+    height: 10vh;
+}
+
+
+/*Animacje*/
+
+@keyframes rotateTime {
+    from {
+        transform: translateY(-130vw);
+    }
+}
+
+@keyframes rotateOne {
+    from {
+        transform: translate(-100vw, -100vh);
+    }
+}
+
+@keyframes rotateTwo {
+    from {
+        transform: translate(150vw, -100vh);
+    }
+}
+
+@keyframes rotateThree {
+    from {
+        transform: translate(-100vw, 100vh);
+    }
+}
+
+@keyframes rotateFour {
+    from {
+        transform: translate(150vw, 100vh);
+    }
+}
+
+@keyframes rotateOneString {
+    from {
+        transform: translate(-100vw, 100vh);
+    }
+}
+
+@keyframes rotateTwoString {
+    from {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes rotateThreeString {
+    from {
+        transform: translate(150vw, 100vh);
+    }
+}
+
+@keyframes rotateFourString {
+    from {
+        transform: translate(-150vw, 100vh);
+    }
+}
+
+@keyframes Copyright {
+    from {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes mainSlide {
+    from {
+        transform: translateY(-130vh);
+    }
+}
+
+/*Media Querys*/
+
+@media screen and (max-width: 425px) {
+    #time {
+        right: 35vw;
+    }
+    .test {
+        width: 65vw;
+    }
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 55vw;
+    }
+    footer {
+        position: absolute;
+        left: 30vw;
+        bottom: -70vh;
+        font-size: 300%;
+        width: 60vw;
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #time {
+        right: 35vw;
+    }
+    .test {
+        width: 65vw;
+    }
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: 55vw;
+    }
+    footer {
+        position: absolute;
+        left: 30vw;
+        bottom: -70vh;
+        font-size: 300%;
+        width: 60vw;
+        height: 10vh;
+    }
+}
