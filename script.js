@@ -1,3 +1,4 @@
+//Obsługa zegara
 let showTime = () => {
     const now = new Date();
 
@@ -23,3 +24,8 @@ let showTime = () => {
 }
 
 setInterval(showTime, 1000);
+//Obsługa zdarzeń
+const buttonC = document.querySelector(".test.one");
+buttonC.addEventListener('click', () => {
+    document.getElementById('content').style.display = 'block';
+})
