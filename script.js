@@ -27,5 +27,17 @@ setInterval(showTime, 1000);
 //Obsługa zdarzeń
 const buttonC = document.querySelector(".test.one");
 buttonC.addEventListener('click', () => {
-    document.getElementById('content').style.display = 'block';
-})
+        document.querySelector('.normal').classList.add('arrow');
+        document.querySelector('.normal').classList.remove('normal');
+        //hidden_content
+        let arrow_left = document.querySelector('.arrow');
+        arrow_left.addEventListener('click', () => {
+            document.getElementById('content').style.display = 'none';
+            document.querySelector('.arrow').classList.add('normal');
+            document.querySelector('.arrow').classList.remove('arrow');
+
+        });
+
+        document.getElementById('content').style.display = 'block';
+    })
+    //Powrót
