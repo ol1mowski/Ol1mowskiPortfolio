@@ -122,7 +122,40 @@ body {
 
 /*Treść Głóna*/
 
-#content {
+#contentOne {
+    display: none;
+    border-radius: 15%;
+    width: 45vw;
+    height: 55vh;
+    background: radial-gradient(var(--blue), var(--white));
+    backdrop-filter: blur(8px);
+    position: absolute;
+    animation: mainSlide 2s;
+}
+
+#contentTwo {
+    display: none;
+    border-radius: 15%;
+    width: 45vw;
+    height: 55vh;
+    background: radial-gradient(var(--blue), var(--white));
+    backdrop-filter: blur(8px);
+    position: absolute;
+    animation: mainSlide 2s;
+}
+
+#contentThree {
+    display: none;
+    border-radius: 15%;
+    width: 45vw;
+    height: 55vh;
+    background: radial-gradient(var(--blue), var(--white));
+    backdrop-filter: blur(8px);
+    position: absolute;
+    animation: mainSlide 2s;
+}
+
+#contentFour {
     display: none;
     border-radius: 15%;
     width: 45vw;
@@ -145,6 +178,14 @@ svg {
     height: 100%;
 }
 
+.git {
+    position: absolute;
+    bottom: 1vh;
+    left: 9.6vw;
+    width: 100px;
+    height: 100px;
+}
+
 .dane {
     position: absolute;
     top: 6vh;
@@ -152,6 +193,48 @@ svg {
     display: inline-block;
     width: 65%;
     height: 15vh;
+}
+
+.imgProject {
+    width: 10vw;
+    height: 25vh;
+    position: absolute;
+    top: 6vh;
+    transition: width, height 0.3s;
+    left: 2vw;
+}
+
+.imgProject:hover {
+    width: 11vw;
+    height: 26vh;
+}
+
+.imgWeb {
+    width: 15vw;
+    height: 25vh;
+    position: absolute;
+    top: 6vh;
+    transition: width, height 0.3s;
+    left: 14vw;
+}
+
+.imgWeb:hover {
+    width: 16vw;
+    height: 26vh;
+}
+
+.imgPage {
+    width: 13vw;
+    height: 25vh;
+    position: absolute;
+    top: 6vh;
+    transition: width, height 0.3s;
+    left: 31vw;
+}
+
+.imgPage:hover {
+    width: 14vw;
+    height: 26vh;
 }
 
 .normal {

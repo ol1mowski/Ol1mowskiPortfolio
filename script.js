@@ -32,12 +32,61 @@ buttonC.addEventListener('click', () => {
         //hidden_content
         let arrow_left = document.querySelector('.arrow');
         arrow_left.addEventListener('click', () => {
-            document.getElementById('content').style.display = 'none';
+            document.getElementById('contentOne').style.display = 'none';
             document.querySelector('.arrow').classList.add('normal');
             document.querySelector('.arrow').classList.remove('arrow');
 
         });
 
-        document.getElementById('content').style.display = 'block';
+        document.getElementById('contentOne').style.display = 'block';
     })
-    //Powrót
+    //Two
+const buttonC2 = document.querySelector(".test.two");
+buttonC2.addEventListener('click', () => {
+        document.querySelector('.normal').classList.add('arrow');
+        document.querySelector('.normal').classList.remove('normal');
+        //hidden_content
+        let arrow_left = document.querySelector('.arrow');
+        arrow_left.addEventListener('click', () => {
+            document.getElementById('contentTwo').style.display = 'none';
+            document.querySelector('.arrow').classList.add('normal');
+            document.querySelector('.arrow').classList.remove('arrow');
+
+        });
+
+        document.getElementById('contentTwo').style.display = 'block';
+    })
+    //Three
+const buttonC3 = document.querySelector(".test.three");
+buttonC3.addEventListener('click', () => {
+        document.querySelector('.normal').classList.add('arrow');
+        document.querySelector('.normal').classList.remove('normal');
+        //hidden_content
+        let arrow_left = document.querySelector('.arrow');
+        arrow_left.addEventListener('click', () => {
+            document.getElementById('contentThree').style.display = 'none';
+            document.querySelector('.arrow').classList.add('normal');
+            document.querySelector('.arrow').classList.remove('arrow');
+
+        });
+
+        document.getElementById('contentThree').style.display = 'block';
+    })
+    //Four
+const buttonC4 = document.querySelector(".test.four");
+buttonC4.addEventListener('click', () => {
+    document.querySelector('.normal').classList.add('arrow');
+    document.querySelector('.normal').classList.remove('normal');
+    //hidden_content
+    let arrow_left = document.querySelector('.arrow');
+    arrow_left.addEventListener('click', () => {
+        document.getElementById('contentFour').style.display = 'none';
+        document.querySelector('.arrow').classList.add('normal');
+        document.querySelector('.arrow').classList.remove('arrow');
+
+    });
+
+    document.getElementById('contentFour').style.display = 'block';
+})
+
+//Powrót
