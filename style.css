@@ -164,7 +164,12 @@ body {
     backdrop-filter: blur(8px);
     position: absolute;
     animation: mainSlide 2s;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/*Ikony*/
 
 .id {
     display: inline-block;
@@ -262,6 +267,107 @@ svg {
     word-wrap: break-word;
     width: 100%;
     height: 15vh;
+}
+
+
+/*Formularz*/
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 53vh;
+    border: 4px outset rgba(28, 110, 164, 0.82);
+    border-radius: 37px 0px 7px 27px;
+}
+
+.labem {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    font-size: 300%;
+}
+
+#email {
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+    border: none;
+    width: 17vw;
+    position: absolute;
+    top: 22vh;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    transition: background 0.3s ease-out, box-shadow 0.3s ease-out, color 0.3s ease-out, outline 0.3s ease-out;
+}
+
+textarea {
+    border: none;
+    position: absolute;
+    top: 33vh;
+    width: 17vw;
+    border-radius: 15px;
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+    font-size: 24px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.labeltext {
+    position: absolute;
+    top: 27vh;
+    left: 15vw;
+    font-size: 300%;
+}
+
+.mainStr {
+    position: absolute;
+    top: 7vh;
+    font-size: 350%;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 8vh;
+    margin-top: 32px;
+    padding: 16px 0;
+    font-size: 200%;
+    color: #fff;
+    background: var(--blue);
+    background: linear-gradient(to right top, var(--blue), rgba(255, 255, 255, 0.6));
+    border: none;
+    position: absolute;
+    top: 42vh;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.send:focus {
+    outline-color: #fff;
+}
+
+.send:after {
+    width: 50px;
+    height: 150%;
+    position: absolute;
+    left: -100px;
+    top: -25px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: rotate(20deg);
+    transition: transform 0.4s;
+}
+
+.send:hover:after {
+    transform: translateX(500px) rotate(20deg);
 }
 
 

@@ -86,7 +86,7 @@ buttonC4.addEventListener('click', () => {
 
     });
 
-    document.getElementById('contentFour').style.display = 'block';
+    document.getElementById('contentFour').style.display = 'flex';
 })
 
 //Powrót
