@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
     --blue: #000ff0;
     --green: #008000;
@@ -256,7 +257,8 @@ svg {
 }
 
 .name {
-    font-size: 200%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 150%;
 }
 
 .describe {
