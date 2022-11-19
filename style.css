@@ -261,6 +261,12 @@ svg {
     font-size: 150%;
 }
 
+.code {
+    margin-left: 1vw;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90%;
+}
+
 .describe {
     display: flex;
     justify-content: center;
